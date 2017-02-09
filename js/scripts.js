@@ -8,13 +8,13 @@ $(document).ready(function() {
     var animalInput = $("input#animal").val();
     var authorityInput = $("input#authority").val();
 
-    $(".person1").append("blah blah");
-    $(".person2").append("blah blah");
-    $(".sport").append("blah blah");
-    $(".team").append("blah blah");
-    $(".score").append("blah blah");
-    $(".animal").append("blah blah");
-    $(".authority").append("blah blah");
+    $(".person1").text("blah blah");
+    $(".person2").text("blah blah");
+    $(".sport").text("blah blah");
+    $(".team").text("blah blah");
+    $(".score").text("blah blah");
+    $(".animal").text("blah blah");
+    $(".authority").text("blah blah");
 
     $("#story").show();
 
