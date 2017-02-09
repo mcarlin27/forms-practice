@@ -1,5 +1,7 @@
 $(document).ready(function() {
-  $("blanks form").submit(function(event) {
+  $("form").submit(function(event) {
+      event.preventDefault();
+
     var person1Input = $("input#person1").val();
     var person2Input = $("input#person2").val();
     var sportInput = $("input#sport").val();
@@ -8,16 +10,15 @@ $(document).ready(function() {
     var animalInput = $("input#animal").val();
     var authorityInput = $("input#authority").val();
 
-    $(".person1").text("blah blah");
-    $(".person2").text("blah blah");
-    $(".sport").text("blah blah");
-    $(".team").text("blah blah");
-    $(".score").text("blah blah");
-    $(".animal").text("blah blah");
-    $(".authority").text("blah blah");
+    $(".person1").text(person1Input);
+    $(".person2").text(person2Input);
+    $(".sport").text(sportInput);
+    $(".team").text(teamInput);
+    $(".score").text(scoreInput);
+    $(".animal").text(animalInput);
+    $(".authority").text(authorityInput);
 
     $("#story").show();
 
-    event.preventDefault();
   });
 });
